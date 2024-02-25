@@ -21,7 +21,7 @@ module.exports = function opener(args, tool) {
     let command;
     switch (platform) {
         case 'win32': {
-            command = 'cmd.exe';
+            command = '/mnt/c/Windows/System32/cmd.exe';
             if (tool) {
                 args.unshift(tool);
             }
